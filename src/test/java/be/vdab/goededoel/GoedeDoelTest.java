@@ -22,6 +22,7 @@ class GoedeDoelTest {
 
 	@Test
 	void eenNieuwDoelHeeftNogGeenOpbrengst() {
+		// Dit is een foutgevende test
 		Assertions.assertThat(doel.getOpgebracht()).isZero();
 	}
 }
