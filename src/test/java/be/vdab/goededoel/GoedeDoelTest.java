@@ -1,11 +1,8 @@
 package be.vdab.goededoel;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import be.vdab.goededoel.GoedeDoel;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.assertj.core.api.Assertions;
 
 class GoedeDoelTest {
 	private static final String NAAM = "CliniClowns";
@@ -18,12 +15,11 @@ class GoedeDoelTest {
 
 	@Test
 	void getNaam() {
-		assertThat(doel.getNaam()).isEqualTo(NAAM);
+		Assertions.assertThat(doel.getNaam()).isEqualTo(NAAM);
 	}
 
 	@Test
 	void eenNieuwDoelHeeftNogGeenOpbrengst() {
 		Assertions.assertThat(doel.getOpbrengst()).isZero();
-
 	}
 }
