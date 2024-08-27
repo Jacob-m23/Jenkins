@@ -1,7 +1,6 @@
 package be.vdab.goededoel;
 
 import java.math.BigDecimal;
-import java.util.Objects;
 
 public class GoedeDoel {
 	private final String naam;
