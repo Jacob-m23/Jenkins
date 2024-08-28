@@ -24,4 +24,9 @@ public class GoedeDoel {
 		if (!(o instanceof GoedeDoel goedeDoel)) return false;
         return naam.equals(goedeDoel.naam);
 	}
+
+	@Override
+	public int hashCode() {
+		return naam.hashCode();
+	}
 }
